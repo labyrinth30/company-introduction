@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -6,7 +7,6 @@ const menuItems = [
   { path: "/", label: "홈" },
   { path: "/about", label: "회사 정보" },
   { path: "/leadership", label: "임원 소개" },
-  { path: "/contact", label: "문의하기" }
 ];
 
 const MenuItem = ({ path, label, onClick }) => (

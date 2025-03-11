@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
@@ -27,7 +28,6 @@ const Footer = () => {
               <li><Link to="/" onClick={scrollToTop} className="hover:text-white transition-colors">홈</Link></li>
               <li><Link to="/about" onClick={scrollToTop} className="hover:text-white transition-colors">회사 정보</Link></li>
               <li><Link to="/leadership" onClick={scrollToTop} className="hover:text-white transition-colors">임원 소개</Link></li>
-              <li><Link to="/contact" onClick={scrollToTop} className="hover:text-white transition-colors">문의</Link></li>
             </ul>
           </div>
           
