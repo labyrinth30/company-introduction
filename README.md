@@ -1,1 +1,1 @@
-기업 소개 시연용 랜딩페이지입니다.
+Company-Introduction-Frontend
