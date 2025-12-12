@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-
-const menuItems = [
-  { path: "/", label: "홈" },
-  { path: "/about", label: "회사 정보" },
-  { path: "/leadership", label: "임원 소개" },
-  { path: "/board", label: "업무 게시판" },
-  { path: "/our-services", label: "제공 기술" },
-  { path: "/contact", label: "문의하기" },
-];
+import { menuItems } from "../Constants/constants.js";
 
 const MenuItem = ({ path, label, onClick }) => (
   <li>
@@ -40,7 +32,11 @@ const NavBar = () => {
         <div className="hidden lg:flex flex-1 justify-center">
           <ul className="flex gap-8 text-lg">
             {menuItems.map((item) => (
-              <MenuItem key={item.path} {...item} />
+              <MenuItem
+                key={item.path}
+                {...item}
+                className="hover:text-blue-600 transition-colors duration-300"
+              />
             ))}
           </ul>
         </div>
@@ -80,6 +76,8 @@ const NavBar = () => {
               <MenuItem
                 key={item.path}
                 {...item}
+                // ⭐️ NavBar 스타일을 className으로 전달 ⭐️
+                className="hover:text-blue-600 transition-colors duration-300"
                 onClick={() => {
                   setIsOpen(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
