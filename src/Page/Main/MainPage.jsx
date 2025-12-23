@@ -1,7 +1,13 @@
+import Forum from "./Forum.jsx";
+import Hero from "./Hero.jsx";
+import Contact from "./Contact.jsx";
+
 const MainPage = () => {
   return (
-    <div className="py-32">
-      <h1>Main</h1>
+    <div>
+      <Hero />
+      <Forum />
+      <Contact />
     </div>
   );
 };
